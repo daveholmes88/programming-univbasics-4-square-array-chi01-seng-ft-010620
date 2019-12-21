@@ -1,4 +1,4 @@
 def square_array(array)
-  array.delete_if { |obj| !(obj.is_a? String) }
+  array.grep(Integer) 
   squared = array.map {|num| num ** 2}
 end
